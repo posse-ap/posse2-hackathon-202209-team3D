@@ -23,6 +23,16 @@ header {
   align-items: bottom;
   justify-content: center;
 }
+.bloom_logo {
+  width: 20%;
+  height: 30%;
+}
+.bloom.logo img {
+  width: 10%;
+  height: auto;
+  size: cover;
+  position: center;
+}
 
 nav {
   width: 45%;
