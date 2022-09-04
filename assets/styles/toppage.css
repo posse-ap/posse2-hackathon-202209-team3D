@@ -1,0 +1,40 @@
+.container{
+  
+  text-align: center;
+  justify-content: center;
+}
+
+.title{
+  font-size: 30px;
+}
+
+
+.topicBox{
+  width: 700px;
+  height:200px;
+  background-color: pink;
+  margin: 0 auto;
+  line-height: 200px;
+  font-size: 30px;
+}
+
+#btn{
+  background-color: #3498db;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: bold;
+  box-shadow: 0 4px 0 #2880b9;
+  user-select: none;
+  width: 400px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+
+
