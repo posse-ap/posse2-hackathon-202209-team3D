@@ -1,25 +1,23 @@
-.container{
-  
+.container {
+
   /* text-align: center; */
   justify-content: center;
 }
 
-.title{
+.title {
   margin-top: 100px;
   font-size: 50px;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Kaisei Tokumin', serif;
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Zen Antique', serif;
   text-align: center;
-  display: block;
-  background:linear-gradient(135deg,#fed878 0%, #fa505e 100%);
-  background: -webkit-linear-gradient(-45deg,#fed878 0%, #fa505e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 
-.topicBox{
+.topicBox {
   width: 700px;
-  height:100px;
+  height: 100px;
   border: 3px solid black;
   border-radius: 10px;
   margin: 0 auto;
@@ -29,15 +27,15 @@
   text-align: center;
   margin-top: 100px;
   margin-bottom: 50px;
-  
+
 }
 
-.q-collection{
+.q-collection {
   width: 600px;
   margin: 0 auto;
 }
 
-#questions > li {
+#questions>li {
   list-style: disc;
   font-weight: bold;
   font-size: 20px;
@@ -46,7 +44,7 @@
 
 }
 
-#btn{
+#btn {
   background-color: #3498db;
   padding: 8px;
   border-radius: 4px;
@@ -64,12 +62,8 @@
   margin-top: 40px;
 }
 
-#btn.disabled{
+#btn.disabled {
   background-color: #ccc;
   box-shadow: 0 4px 0 #bbb;
   opacity: 0.6;
 }
-
-
-
-
