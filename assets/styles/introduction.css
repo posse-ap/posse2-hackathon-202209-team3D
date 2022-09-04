@@ -53,7 +53,8 @@ h2 {
 }
 
 .swiper-slide {
-  width: 70%;
+  width: 1000px;
+  height: auto;
   overflow: hidden;
   outline: 2px solid red;
   display: flex;
