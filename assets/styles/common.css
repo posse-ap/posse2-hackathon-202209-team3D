@@ -23,15 +23,15 @@ header {
   align-items: bottom;
   justify-content: center;
 }
-.bloom_logo {
-  width: 20%;
-  height: 30%;
+
+.bloom_logo_img {
+  width: 40%;
+  display: block;
 }
-.bloom.logo img {
-  width: 10%;
-  height: auto;
-  size: cover;
-  position: center;
+.posse_logo_img {
+  width: 20%;
+  display: block;
+  background-color: #fff;
 }
 
 nav {
