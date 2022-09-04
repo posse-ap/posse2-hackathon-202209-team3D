@@ -9,13 +9,16 @@ body {
 h1 {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
-  font-family: "Pacifico", cursive;
+  font-family: "Zen Antique", serif;
   margin: 10%;
   background: linear-gradient(transparent 40%, #ffd6c2 100%);
 }
 
 h2 {
   font-size: 30px;
+  font-family: "Kaisei Tokumin", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Zen Antique", serif;
   padding: 4%;
 }
 
@@ -39,6 +42,20 @@ h2 {
 
 .swiper {
   overflow: visible !important;
+}
+
+.swiper_wrapper:nth-child(2n+1) {
+  img {
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+  }
+}
+
+.swiper_wrapper:nth-child(2n) {
+  img {
+    border-bottom-left-radius: 40%;
+    border-top-left-radius: 40%;
+  }
 }
 
 .swiper-slide {
@@ -75,7 +92,7 @@ h2 {
     -o-object-fit: cover;
     object-fit: cover;
     border-bottom-right-radius: 40%;
-    border-top-right-radius: 40%;
+        border-top-right-radius: 40%;
     z-index: 0;
   }
 
