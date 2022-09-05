@@ -439,5 +439,10 @@
       map.classList.remove("disabled");
       timerB = setInterval("snakeB.run()", 200);
     });
+
+    ruleButton.addEventListener("click", () => {
+      overMenu.classList.add("disabled");
+      startMenu.classList.remove("disabled");
+    });
   }
 }
