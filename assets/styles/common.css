@@ -12,7 +12,7 @@ header {
   background-color: #fff;
   box-shadow: 8px 0px 32px 8px grey;
   position: fixed;
-  z-index: 1;
+  z-index: 99;
 }
 
 .hamburger_button_area {
