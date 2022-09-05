@@ -108,18 +108,26 @@ main {
   font-size: 25px;
   line-height: 40px;
   font-weight: bold;
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
   user-select: none;
   width: 400px;
   height: 40px;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 40px;
+  transition: 0.2s;
 }
 
 #btn:hover {
-  transform: translateY(5px);
-  box-shadow: 0 0 0;
+  transform: translate(3px, 3px);
+  box-shadow: none;
+  transition: 0.15s;
+}
+#btn:active {
+  box-shadow: -2px -2px 0 rgba(0, 0, 0, 0.3);
+  transform: translate(4px, 4px);
+  background-color: #84aac3;
+  color: lightgrey;
 }
 
 #btn.disabled {
