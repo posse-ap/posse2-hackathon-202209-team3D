@@ -20,5 +20,9 @@
         }
       });
     });
+    // if (scroll > 100) {
+    //   $('body,html').animate({scrollTop: 500}, 500); 
+    //   return false;
+    // }
   });
 }
