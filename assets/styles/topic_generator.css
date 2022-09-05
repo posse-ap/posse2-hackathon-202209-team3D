@@ -17,6 +17,7 @@ main {
   color: white;
   text-align: center;
   color: white;
+  text-shadow: 0.5px 0.5px 2px black;
 }
 
 .txt_gene {
@@ -41,6 +42,7 @@ main {
   text-align: center;
   align-items: center;
   margin-bottom: 4vh;
+  box-shadow:  2px 2px 8px inset;
 }
 
 .circle1{
