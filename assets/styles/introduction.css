@@ -225,6 +225,9 @@ h2 {
   .swiper-slide .slide_text {
     width: 100vw;
   }
+  h2 {
+    font-size: 160%;
+  }
   .swiper-slide img {
     width: 100vw;
     height: 100%;
