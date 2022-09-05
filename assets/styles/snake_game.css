@@ -115,6 +115,11 @@ main {
   margin-bottom: 20px;
 }
 
+.start_menu_instruction h1:hover{
+  transform: scale(120%);
+  transition: 0.5s;
+}
+
 .start_menu_instruction_mapsize li {
   list-style-type: none;
   text-align: center;

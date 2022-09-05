@@ -24,14 +24,10 @@ $(window).on('load',function(){
         var scroll = $(window).scrollTop();
         var blockPosition = $(this).offset().top;
         var windowHeight = $(window).height();
-        if (scroll > blockPosition - windowHeight + 300) {
+        if (scroll > blockPosition - windowHeight + 200) {
           $(this).addClass("scroll");
         }
       });
     });
-    // if (scroll > 100) {
-    //   $('body,html').animate({scrollTop: 500}, 500); 
-    //   return false;
-    // }
   });
 }

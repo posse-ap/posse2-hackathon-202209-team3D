@@ -44,14 +44,16 @@ h2 {
   width: 100vw;
   height: 60vh;
   overflow: hidden;
-  outline: 2px solid red;
+  border: 4px solid #f4c3c3;
   background-color: white;
+  border-radius: 30px;
   display: flex;
   margin: 0 auto;
 
   .slide_img {
     width: 50%;
     position: relative;
+    opacity: 1;
 
     ::before {
       content: ""; /* 疑似要素に必須 */
@@ -98,9 +100,21 @@ h2 {
 /* name_list */
 
 .swiper-pagination-bullet {
-  background-color: transparent;
-  height: 30px;
-  width: 35px;
+  height: 10%;
+  width: 7%;
+  background-color: #97c2de;
+  color: white;
+  font-size: 120%;
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: 2px 2px #7596ac;
+  opacity: 1;
+  transition: 0.3s;
+}
+.swiper-pagination-bullet:hover {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+  color: lightgrey;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -120,7 +134,6 @@ h2 {
 }
 /* responsive design */
 @media (min-width: 800px) {
- 
 }
 
 @media (min-width: 500px) and (max-width: 799px) {
@@ -136,7 +149,7 @@ h2 {
     width: 100%;
     height: auto;
     overflow: hidden;
-    outline: 2px solid red;
+    border: 4px solid #f4c3c3;
     display: block;
 
     .slide_img{
