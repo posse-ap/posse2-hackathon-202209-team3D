@@ -88,6 +88,17 @@ h2 {
 }
 
 /* name_list */
+.name-list{
+  width: 1000px;
+  height: 300px;
+  margin-top: 50px;
+  margin: 50px auto;
+  background-color: pink;
+  /* font-size: 20px; */
+
+}
+
+/* name_list */
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 10px;
   left: 0;
