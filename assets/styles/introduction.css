@@ -32,16 +32,22 @@ h2 {
 /* slide */
 .swiper {
   overflow: visible !important;
+  display: block;
+  z-index: -4;
 }
 
+
+
 .swiper-slide {
-  width: 100%;
+  width: 100vw;
   height: 80vh;
   overflow: hidden;
   outline: 2px solid red;
   background-color: white;
   display: flex;
   margin: 0 auto;
+  margin-top: 130px;
+  z-index: -5;
 }
 .swiper-slide .slide_img {
   width: 50%;
