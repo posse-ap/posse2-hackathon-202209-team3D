@@ -11,6 +11,14 @@ header {
 .pc_navigation ul a {
   font-size: 87%;
 }
+.overlay_navigation li {
+  font-size: 120%;
+}
+@media (max-width: 375px) {
+  .logo_area {
+    padding-left: 22%;
+  }
+}
 /* END ADDITIONAL HEADER  */
 
 /* common */
