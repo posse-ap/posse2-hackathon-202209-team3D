@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>トップページ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Berkshire+Swash&family=Comfortaa:wght@300;400;500;600;700&family=DotGothic16&family=DynaPuff&family=Hachi+Maru+Pop&family=Marck+Script&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Potta+One&family=Rampart+One&family=Zen+Kurenaido&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../assets/styles/reset.css">
-  <link rel="stylesheet" href="../assets/styles/toppage.css">
+  <link rel="stylesheet" href="../assets/styles/top_page.css">
 </head>
 
 <body>
@@ -21,12 +27,68 @@
 
     <nav class="pc_menu_navigation">
       <ul>
+        <li><a href="./top_page/index.html">トップページ</a></li>
+        <li><a href="./topic_generator/index.html">話題</a></li>
+        <li><a href="./snake_game/index.html">ゲーム</a></li>
+        <li><a href="./introduction/index.html">自己紹介</a></li>
+        <!-- リストの項目名は後からおしゃれな名前に変えます -->
         <a href="./topic_generator/index.html"><li>話題ジェネレータ</li></a>
         <a href="./topic_generator/index.html"><li>対戦型スネークゲーム</li></a>
         <a href="./topic_generator/index.html"><li>3.0期生の仲間</li></a>
       </ul>
     </nav>
-
   </header>
+
+  <main>
+    <section id="js-hero" class="main_hero">
+      <h1 class="main_hero_title1">SPEAK</h1>
+      <h1 class="main_hero_title2">YOUR</h1>
+      <h1 class="main_hero_title3">MIND</h1>
+    </section>
+    <svg class="arrows">
+      <path class="a1" d="M0 0 L30 32 L60 0"></path>
+      <path class="a2" d="M0 20 L30 52 L60 20"></path>
+      <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+    <nav class="main_nav">
+      <section class="main_nav_topic">
+        <div><img src="../img/toppage_1.jpeg" alt=""></div>
+        <div>
+          <h1>話題ジェネレーター</h1>
+          <p>
+          <h2>社会心理学者ゲイリー・ウッドによる自己開示に適した話題10選！</h2>
+          <h2>色々話しましょう！！</h2>
+          </p>
+        </div>
+
+        <a href="../topic_generator/index.html"><button>GO!</button></a>
+      </section>
+      <section class="main_nav_game">
+        <div class="">
+          <h1 class="main_nav_title">対戦ゲーム</h1>
+          <p>
+          <h2>二人でできる対戦系スネークゲーム！</h2>
+          <h2>一緒に遊びましょう！！</h2>
+          </p>
+        </div>
+        <div><img src="../img/toppage_2.jpeg" alt=""></div>
+        <a href="../snake_game/index.html"><button>GO!</button></a>
+      </section>
+      <section class="main_nav_introduction">
+        <div><img src="../img/toppage_3.jpeg" alt=""></div>
+        <div>
+          <h1>3.0期生の仲間</h1>
+          <p>
+          <h2>話しかけたいけど、何を話したらいいかわからない？</h2>
+          <h2>みんなの声見てみよう！！</h2>
+          </p>
+        </div>
+        <a href="../introduction/index.html"><button>GO!</button></a>
+      </section>
+    </nav>
+  </main>
+
+  <script src="../assets/scripts/top_page.js"></script>
 </body>
+
 </html>

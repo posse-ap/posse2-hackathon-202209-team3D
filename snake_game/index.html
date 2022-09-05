@@ -21,10 +21,16 @@
 
   <!-- START MAIN -->
   <main>
-    <section id="js-startMenu" class="start_menu_section">
-      <div class="start_menu_section_title">SNAKE GAME</div>
-      <button id="js-startButton">Start!</button>
-
+    <section id="js-startMenu" class="start_menu_section">">
+      <section class="start_menu_frame">
+        <div class="start_menu_section_title">SNAKE GAME</div>
+        <button id="js-startButton">Start!</button>
+      </section>
+      <svg class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+      </svg>
       <section class="start_menu_instruction">
         <div class="start_menu_instruction_mapsize">
           <h1>MAP SIZE</h1>
@@ -55,7 +61,9 @@
 
 
     </section>
+
     <div id="js-map" class="main_map disabled"></div>
+
     <section id="js-overMenu" class="over_menu_section disabled">
       <section>
         <div class="over_menu_sectionA">
@@ -71,6 +79,8 @@
       </section>
 
       <button id="js-restartButton">Try Again!</button>
+
+      <button id="js-ruleButton">Rule</button>
     </section>
   </main>
   <!-- END MAIN -->
