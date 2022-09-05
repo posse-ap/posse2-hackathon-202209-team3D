@@ -13,15 +13,44 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/styles/reset.css">
   <link rel="stylesheet" href="../assets/styles/snake_game.css">
+  <link rel="stylesheet" href="../assets/styles/common.css">
 </head>
 
 <body>
-  <!-- START HEADER -->
-  <!-- END HEADER  -->
+<!-- START HEADER WITH RESPONSIVE DESIGN -->
+<header>
+  <div class="logo_area">
+    <div class="logos_set">
+      <img class="bloom_logo_img" src="./img/BLOOM_logo_color_modified.png" alt="">
+      <img class="posse_logo_img" src="./img/logo copy.svg" alt="">
+    </div>
+  </div>
+
+  <nav class="pc_navigation">
+    <ul>
+      <a href="../topic_generator/index.html"><li>話題ジェネレータ</li></a>
+      <a href="./index.html"><li>対戦型スネークゲーム</li></a>
+      <a href="../introduction/index.html"><li>3.0期生の仲間</li></a>
+    </ul>
+  </nav>
+
+  <div class="hamburger_button_area">
+    <div class="hamburger_button" id="menu_button"></div>
+  </div>
+</header>
+
+  <nav class="overlay_navigation">
+      <ul>
+        <a href="../topic_generator/index.html"><li>話題ジェネレータ</li></a>
+        <a href="./index.html"><li>対戦型スネークゲーム</li></a>
+        <a href="../introduction/index.html"><li>3.0期生の仲間</li></a>
+      </ul>
+  </nav>
+  <!-- END HEADER WITH RESPONSIVE DESIGN -->
 
   <!-- START MAIN -->
   <main>
-    <section id="js-startMenu" class="start_menu_section">">
+    <section id="js-startMenu" class="start_menu_section">
       <section class="start_menu_frame">
         <div class="start_menu_section_title">SNAKE GAME</div>
         <button id="js-startButton">Start!</button>
@@ -86,6 +115,7 @@
   <!-- END MAIN -->
 
   <script src="../assets/scripts/snake_game.js"></script>
+  <script src="../assets/scripts/common.js"></script>
 </body>
 
 </html>

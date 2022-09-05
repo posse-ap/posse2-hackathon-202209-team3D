@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../assets/styles/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../assets/styles/introduction.css">
+  <link rel="stylesheet" href="../assets/styles/common.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -22,27 +23,42 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo_area">
+<!-- START HEADER WITH RESPONSIVE DESIGN -->
+<header>
+  <div class="logo_area">
+    <div class="logos_set">
       <img class="bloom_logo_img" src="./img/BLOOM_logo_color_modified.png" alt="">
       <img class="posse_logo_img" src="./img/logo copy.svg" alt="">
     </div>
+  </div>
 
-    <nav>
+  <nav class="pc_navigation">
+    <ul>
+      <a href="../topic_generator/index.html"><li>話題ジェネレータ</li></a>
+      <a href="../snake_game/index.html"><li>対戦型スネークゲーム</li></a>
+      <a href="./index.html"><li>3.0期生の仲間</li></a>
+    </ul>
+  </nav>
+
+  <div class="hamburger_button_area">
+    <div class="hamburger_button" id="menu_button"></div>
+  </div>
+</header>
+
+  <nav class="overlay_navigation">
       <ul>
-        <li><a href="./top_page/index.html">トップページ</a></li>
-        <li><a href="./topic_generator/index.html">話題</a></li>
-        <li><a href="./snake_game/index.html">ゲーム</a></li>
-        <li><a href="./introduction/index.html">自己紹介</a></li>
-        <!-- リストの項目名は後からおしゃれな名前に変えます -->
+        <a href="../topic_generator/index.html"><li>話題ジェネレータ</li></a>
+        <a href="../snake_game/index.html"><li>対戦型スネークゲーム</li></a>
+        <a href="./index.html"><li>3.0期生の仲間</li></a>
       </ul>
-    </nav>
-  </header>
+  </nav>
+  <!-- END HEADER WITH RESPONSIVE DESIGN -->
 
-  <div class="slide"></div>
-  <!-- Slider main container -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
+  <main>
+    <div class="slide"></div>
+    <!-- Slider main container -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
       <!-- Slides -->
       <div class="swiper-slide">
         <div class="slide_img">
@@ -461,10 +477,12 @@
     
   </div>
   </div>
-
+</main>
+  
   <!--end slides-->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/scripts/introduction.js"></script>
+  <script src="../assets/scripts/common.js"></script>
   <!-- end slide -->
 </body>
 

@@ -14,11 +14,12 @@
   <link rel="stylesheet" href="../assets/styles/reset.css">
   <link rel="stylesheet" href="../assets/styles/top_page.css">
   <script src="../assets/scripts/jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" href="../assets/styles/common.css">
 </head>
 
 <body>
+  <!-- START HEADER WITH RESPONSIVE DESIGN -->
   <header>
-
     <div class="logo_area">
       <div class="logos_set">
         <img class="bloom_logo_img" src="./img/BLOOM_logo_color_modified.png" alt="">
@@ -26,19 +27,27 @@
       </div>
     </div>
 
-    <nav class="pc_menu_navigation">
+    <nav class="pc_navigation">
       <ul>
-        <li><a href="./top_page/index.html">トップページ</a></li>
-        <li><a href="./topic_generator/index.html">話題</a></li>
-        <li><a href="./snake_game/index.html">ゲーム</a></li>
-        <li><a href="./introduction/index.html">自己紹介</a></li>
-        <!-- リストの項目名は後からおしゃれな名前に変えます -->
-        <a href="./topic_generator/index.html"><li>話題ジェネレータ</li></a>
-        <a href="./topic_generator/index.html"><li>対戦型スネークゲーム</li></a>
-        <a href="./topic_generator/index.html"><li>3.0期生の仲間</li></a>
+        <a href="../topic_generator/index.html"><li>話題ジェネレータ</li></a>
+        <a href="../snake_game/index.html"><li>対戦型スネークゲーム</li></a>
+        <a href="../introduction/index.html"><li>3.0期生の仲間</li></a>
       </ul>
     </nav>
+
+    <div class="hamburger_button_area">
+      <div class="hamburger_button" id="menu_button"></div>
+    </div>
   </header>
+
+    <nav class="overlay_navigation">
+        <ul>
+          <a href="../topic_generator/index.html"><li>話題ジェネレータ</li></a>
+          <a href="../snake_game/index.html"><li>対戦型スネークゲーム</li></a>
+          <a href="../introduction/index.html"><li>3.0期生の仲間</li></a>
+        </ul>
+    </nav>
+    <!-- END HEADER WITH RESPONSIVE DESIGN -->
 
   <main>
     <section id="js-hero" class="main_hero">
@@ -90,6 +99,7 @@
   </main>
 
   <script src="../assets/scripts/top_page.js"></script>
+  <script src="../assets/scripts/common.js"></script>
 </body>
 
 </html>

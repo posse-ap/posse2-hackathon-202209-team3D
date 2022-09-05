@@ -5,6 +5,7 @@ body {
 
 /* START MAIN  */
 main {
+  padding-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
