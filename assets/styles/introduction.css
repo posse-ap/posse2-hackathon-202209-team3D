@@ -47,6 +47,26 @@
       transform: translateY(0);
     }
   }
+
+/* START ADDITIONAL HEADER  */
+.logo_area {
+  width: 16%;
+  padding-left: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logos_set {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* END ADDITIONAL HEADER  */
+
 /* common */
 body {
   margin: 0;
