@@ -7,46 +7,48 @@
   height: 100%;
   z-index: 9999;
   background: white;
-  text-align:center;
-  color:white;
+  text-align: center;
+  color: white;
   display: flex;
-  }
-  
-  /* Loading画像中央配置　*/
-  #splash_logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Loading アイコンの大きさ設定　*/
-  #splash_logo img {
-    width: 260px;
-  }
-  
-  /* fadeUpをするアイコンの動き */
-  
-  .fadeUp{
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+  width: 260px;
+}
+
+/* fadeUpをするアイコンの動き */
+
+/* fadeUpをするアイコンの動き */
+
+.fadeUp {
   animation-name: fadeUpAnime;
-  animation-duration:0.5s;
-  animation-fill-mode:forwards;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
   opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
   }
-  
-  @keyframes fadeUpAnime{
-    from {
-      opacity: 0;
-      transform: translateY(100px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
 /* common */
 body {
@@ -64,7 +66,7 @@ main img {
   width: 100%;
   height: 100%;
   -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  transform: scale(1.15);
   -webkit-transition: -webkit-transform 1.9s ease;
   transition: -webkit-transform 1.9s ease;
   transition: transform 1.9s ease;
@@ -124,7 +126,7 @@ h2:hover {
   box-shadow: 0 0 50px 20px #ffffff inset;
   border-bottom-right-radius: 40%;
   border-top-right-radius: 40%;
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 99;
@@ -156,7 +158,7 @@ h2:hover {
 
 .swiper-slide-active img {
   -webkit-transform: none;
-          transform: none;
+  transform: none;
   opacity: 1;
   position: relative;
 }
@@ -171,7 +173,7 @@ h2:hover {
   font-weight: 500;
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px #7596ac;
-          box-shadow: 2px 2px #7596ac;
+  box-shadow: 2px 2px #7596ac;
   opacity: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -179,13 +181,16 @@ h2:hover {
 
 .swiper-pagination-bullet:hover {
   -webkit-transform: translate(2px, 2px);
-          transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   color: lightgrey;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: 10px;
   left: 0;
   width: 100%;
@@ -194,7 +199,9 @@ h2:hover {
   margin: 10px;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   margin: var(--swiper-pagination-bullet-horizontal-gap, 20px);
 }
 
@@ -248,7 +255,7 @@ h2:hover {
   }
   .swiper-slide-active img {
     -webkit-transform: none;
-            transform: none;
+    transform: none;
     opacity: 1;
     position: relative;
   }

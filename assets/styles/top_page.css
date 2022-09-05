@@ -29,7 +29,7 @@
   
   .fadeUp{
   animation-name: fadeUpAnime;
-  animation-duration:0.5s;
+  animation-duration:0.75s;
   animation-fill-mode:forwards;
   opacity: 0;
   }
@@ -37,7 +37,7 @@
   @keyframes fadeUpAnime{
     from {
       opacity: 0;
-      transform: translateY(100px);
+      transform: translateY(25px);
     }
   
     to {
