@@ -12,7 +12,7 @@ main {
 }
 
 .start_menu_section{
-  width: 80vw;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,10 +23,9 @@ main {
 }
 
 .start_menu_frame {
-  width: 80vw;
-  height: 80vh;
+  width: 70vw;
+  height: 60vh;
   background-color: white;
-  border-radius: 20px;
 
   display: flex;
   flex-direction: column;
@@ -34,13 +33,14 @@ main {
   align-items: center;
 
   margin-top:10vh;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00000085;
 }
 
 .start_menu_section_title{
   font-family: 'Berkshire Swash', cursive;
-  font-size: 10vw;
-  color: white;
-  -webkit-text-stroke: 2px black;
+  font-size: 7vw;
+  color: black;
 }
 
 .start_menu_instruction {
@@ -50,6 +50,7 @@ main {
 
   background-color: white;
   border-radius: 20px;
+  box-shadow: 0 0 30px #00000085;
 }
 
 .start_menu_instruction_mapsize {
@@ -101,13 +102,13 @@ main {
 
 .start_menu_instruction_rule div img{
   margin-top: 30px;
-  width: 40vw;
+  width: 35vw;
 }
 
 .start_menu_section button, .over_menu_section button {
   width: 40vw;
   height: 15%;
-  margin-top: 10%;
+  margin-top: 2vh;
 
   border-radius: 50px;
   background-color: white;
@@ -115,7 +116,7 @@ main {
 
   font-family: 'DynaPuff', cursive;
   color: black;
-  font-size: 5vw;
+  font-size: 3vw;
 
   cursor: pointer;
 }
@@ -127,7 +128,7 @@ main {
 }
 
 .over_menu_section {
-  width: 80vw;
+  width: 60vw;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -142,11 +143,12 @@ main {
 
 .over_menu_section section{
   width: 80vw;
-  height: 60vh;
+  height: 50vh;
   display: flex;
-  margin-top: 20vh;
+  margin-top: 6vh;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 2vh;
 }
 
 .over_menu_sectionA, .over_menu_sectionB {
@@ -161,18 +163,18 @@ main {
   border-radius: 20px;
 
   font-family: 'DotGothic16', sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 .over_menu_sectionA {
-  background-color: #FFF1F1;
-  border: 10px solid #fc9b9b;
+  background-color: #fac3c3;
+  box-shadow: 4px 4px 10px #f87d7d;
   margin-right: 2.5vw;
 }
 
 .over_menu_sectionB {
-  background-color: #FAF2DA;
-  border: 10px solid #ffde7a;
+  background-color: #ffebae;
+  box-shadow: 4px 4px 10px #ffcc35;
   margin-left: 2.5vw;
 }
 
@@ -186,23 +188,21 @@ main {
   height: 600px;
 
   margin-top: 10vh;
-  background: white;
-  border: 10px solid #2994D1;
+  background: #ffffff;
+  border: px dotted #2994D1;
   border-radius: 30px;
-  box-shadow: 0px 0px 8px #fdfdfd57;
+  box-shadow: 0 0 30px #00000085;
 }
 
 .snakeA {
   border-radius: 50%;
-  background-color: #FFF1F1;
-  border: 3px groove #fc9b9b;
+  background-color: #feafaf;
   position: absolute;
 }
 
 .snakeB {
   border-radius: 50%;
-  background-color: #FAF2DA;
-  border: 3px groove #ffde7a;
+  background-color: #ffda6c;
   position: absolute;
 }
 
