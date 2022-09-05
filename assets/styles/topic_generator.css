@@ -7,6 +7,7 @@ main {
   position: relative;
   width: 100%;
   width: 90vw;
+  width: 100vw;
   height: 90vh;
   padding-top: 10vh;
   background-color: #F4C3C3;
@@ -53,12 +54,12 @@ main {
   width: 300px;
   height: 300px;
   line-height: 300px;
-  border: 10px solid greenyellow;
+  border: 10px solid transparent;
   border-radius: 30% 70% 32% 68% / 69% 21% 79% 31% ;
   background: transparent;
   font-weight: bold;
   font-size: 30px;
-  top: 50%;
+  top: 54%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -68,7 +69,7 @@ main {
   position: absolute;
   width: 300px;
   height: 300px;
-  border: 10px solid greenyellow;
+  border: 10px solid transparent;
   border-radius: 82% 18% 25% 75% / 50% 50% 50% 50%   ;
   background: transparent;
   top: 50%;
@@ -80,7 +81,7 @@ main {
   position: absolute;
   width: 300px;
   height: 300px;
-  border: 10px solid greenyellow;
+  border: 10px solid transparent;
   border-radius: 17% 83% 84% 16% / 13% 52% 48% 87% ;
   background: transparent;
   top: 50%;
@@ -144,26 +145,30 @@ main {
   opacity: 0.6;
 }
 
-@media (max-width: 499px) {
+@media (max-width: 375px) {
   main{
     width: 100%;
   }
   .title{
-    font-size: 35px;
-    padding-top: 60px;
+    font-size: 200%;
+    padding-top: 8vh;
   }
   .txt_gene{
-    margin-top: 70px;
+    padding-top: 6vh;
   }
   .topicBox{
-    width: 300px;
+    width: 80vw;
+    font-size: 130%;
+    padding-bottom: 0.7vh;
   }
   #btn{
-    width: 300px;
+    width: 70vw;
   }
   .q-collection{
     width: 375px;
     text-align: center;
   }
-
+  #questions li{
+    font-size: 80%;
+  }
 }

@@ -57,11 +57,6 @@
     }
     setTimeout(wait,1000);
 
-    
-    
-
-
-
     count ++;
   })
   
