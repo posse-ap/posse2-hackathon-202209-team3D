@@ -6,6 +6,14 @@ body {
   line-height: 1.5;
 }
 
+main{
+  img {
+    width: 100%;
+    transform: scale(1.15);
+    transition: transform 1.9s ease;
+  }
+}
+
 h1 {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
@@ -22,19 +30,10 @@ h2 {
   padding: 4%;
 }
 
-img {
-  width: 100%;
-}
 
-img {
-  transform: scale(1.15);
-  transition: transform 1.9s ease;
-}
 
-/* header */
 
 /* slide */
-/*スライドショーの作成*/
 .swiper {
   overflow: visible !important;
 }

@@ -7,8 +7,10 @@ body {
   line-height: 1.5;
 }
 
-main {
-  padding-top: 15vh;
+main img {
+  width: 100%;
+  transform: scale(1.15);
+  transition: transform 1.9s ease;
 }
 
 h1 {
@@ -27,18 +29,7 @@ h2 {
   padding: 4%;
 }
 
-img {
-  width: 100%;
-}
-
-img {
-  transform: scale(1.15);
-  transition: transform 1.9s ease;
-}
-
-/* header */
 /* slide */
-/*スライドショーの作成*/
 .swiper {
   overflow: visible !important;
 }
@@ -99,15 +90,7 @@ img {
   width: 100%;
   position: relative;
   padding-top: 5vh;
-  padding: 15px;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 2vh var(--swiper-pagination-bullet-horizontal-gap,9vw);
-
-.swiper-pagination-bullet {
-    padding: 10px;
-    
+  margin: 15px;
 }
 
 /* responsive design */
