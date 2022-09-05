@@ -41,7 +41,7 @@ img {
 
 .swiper-slide {
   width: 100%;
-  height: auto;
+  height: 80vh;
   overflow: hidden;
   outline: 2px solid red;
   background-color: white;
