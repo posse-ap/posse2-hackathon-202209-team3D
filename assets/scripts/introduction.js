@@ -1,3 +1,5 @@
+let labels = ['label', 'label', 'label'];
+
 function slideVisibleToggle(sWrap) {
     sWrap.forEach(function(slideItem) {
       if ( slideItem.classList.contains('swiper-slide-visible') == true ){
@@ -51,6 +53,11 @@ var swiper = new Swiper(".mySwiper", {
   /* ページネーション表示 */
   pagination: {
       el: ".swiper-pagination",
+			clickable:"true",
+			renderBullet: function (index, className) {
+				return '<div class="' + className + '">' + (labels[index])+ '</div>';
+			},
+			
   },
   /* スライドの切り替えボタン表示 */
   navigation: {

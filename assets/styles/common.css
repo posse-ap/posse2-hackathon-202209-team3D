@@ -3,15 +3,8 @@
   padding: 0;
 }
 
-.hamburger_button_area {
-  display: none;
-}
-.overlay_navigation {
-  display: none;
-}
-
 header {
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -19,6 +12,15 @@ header {
   background-color: #fff;
   box-shadow: 8px 0px 32px 8px grey;
   position: fixed;
+  z-index: 1;
+}
+
+.hamburger_button_area {
+  display: none;
+}
+.overlay_navigation {
+  display: none;
+  z-index: 1;
 }
 
 .logo_area {

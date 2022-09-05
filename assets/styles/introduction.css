@@ -7,6 +7,12 @@ body {
   line-height: 1.5;
 }
 
+main img {
+  width: 100%;
+  transform: scale(1.15);
+  transition: transform 1.9s ease;
+}
+
 h1 {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
@@ -23,18 +29,7 @@ h2 {
   padding: 4%;
 }
 
-img {
-  width: 100%;
-}
-
-img {
-  transform: scale(1.15);
-  transition: transform 1.9s ease;
-}
-
-/* header */
 /* slide */
-/*スライドショーの作成*/
 .swiper {
   overflow: visible !important;
 }
@@ -89,24 +84,15 @@ img {
 }
 
 /* name_list */
-.name-list{
-  width: 1000px;
-  height: 300px;
-  margin-top: 50px;
-  margin: 50px auto;
-  background-color: pink;
-  /* font-size: 20px; */
-}
-
-.name-row{
-  display: flex;
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
   width: 100%;
+  position: relative;
+  padding-top: 5vh;
+  margin: 15px;
 }
 
-.name-tag{
-  width: 12.5%;
-  text-align: center;
-}
 /* responsive design */
 @media (min-width: 500px) and (max-width: 799px) {
   .main_map {
@@ -155,4 +141,3 @@ img {
     position: relative;
   }
 }/*# sourceMappingURL=introduction.css.map */
-
