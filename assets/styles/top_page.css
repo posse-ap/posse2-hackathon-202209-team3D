@@ -1,0 +1,249 @@
+/* main */
+main {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* main_hero */
+.main_hero {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.main_hero h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 15vw;
+  position: relative;
+}
+
+.main_hero_title1, .main_hero_title3 {
+  width: 50vw;
+  margin-left: 5vw;
+}
+
+.main_hero_title2 {
+  width: 30vw;
+  margin-left: 60vw;
+}
+
+.main_hero h1::after {
+  height: 120%;
+  content: "";
+  position: absolute;
+  left: -10%;
+  bottom: -10%;
+  border-radius: 40%;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.main_hero.load .main_hero_title1::after {
+  width: 43vw;
+  background-color: #F4C3C3;
+  transition: 1s;
+  transition-delay: 1s;
+}
+
+.main_hero.load .main_hero_title2::after {
+  width: 36vw;
+  background-color: #c6deff;
+  transition: 1s;
+  transition-delay: 2s;
+}
+
+.main_hero.load .main_hero_title3::after {
+  width: 34vw;
+  background-color: #ffe1ab;
+  transition: 1s;
+  transition-delay: 3s;
+}
+
+.main_hero.load .main_hero_title1, .main_hero.load .main_hero_title3 {
+  transform: translateX(3vw);
+  transition: transform 1s;
+}
+
+.main_hero.load .main_hero_title2 {
+  transform: translateX(-3vw);
+  transition: transform 1s;
+}
+
+.arrows {
+  /* margin-top: 10vh;
+  margin-bottom: 10vh; */
+  width: 60px;
+  height: 72px;
+}
+
+.arrows path {
+  stroke: #2994D1;
+  fill: transparent;
+  stroke-width: 1px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s;
+}
+
+/* main_nav */
+.main_nav {
+  width: 90vw;
+  margin-top: 20vh;
+}
+.main_nav img {
+  width: 40vw;
+}
+
+.main_nav_topic, .main_nav_game, .main_nav_introduction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 15vh;
+  opacity: 0;
+}
+
+.main_nav_topic.scroll, .main_nav_game.scroll, .main_nav_introduction.scroll {
+  opacity: 1;
+  transition: 3s;
+}
+
+.main_nav_game {
+  margin-bottom: 20vh;
+}
+
+.main_nav_introduction div {
+  margin-left: 2vw;
+}
+
+.main_nav_topic h1, .main_nav_game h1, .main_nav_introduction h1 {
+  font-family: 'Rampart One', cursive;
+  font-size: 6vw;
+  position: relative;
+}
+
+.main_nav_title::after {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(10px);
+  border-radius: 50%;
+  background-color: #2994D1;
+} 
+
+.main_nav_topic h1::after, .main_nav_game h1::after, .main_nav_introduction h1::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(10px);
+  border-radius: 50%;
+  background-color: #2994D1;
+} 
+
+.main_nav_topic h1:hover, .main_nav_game h1:hover, .main_nav_introduction h1:hover {
+  transform: scale(110%);
+  transition: 1s;
+}
+
+.main_nav_topic p, .main_nav_game p, .main_nav_introduction p {
+  margin-top: 10%;
+}
+
+.main_nav_topic h2, .main_nav_game h2, .main_nav_introduction h2 {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 3vw;
+  margin-top: 3%;
+}
+
+.main_nav_topic button, .main_nav_game button, .main_nav_introduction button {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: none;
+
+  position: absolute;
+
+  color: white;
+  font-family: 'DynaPuff', cursive;
+  font-size: 3vw;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: 1s;
+}
+
+.main_nav_topic button:hover, .main_nav_game button:hover, .main_nav_introduction button:hover {
+  box-shadow: 3px 3px 5px gray;
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+.main_nav_topic a, .main_nav_game a, .main_nav_introduction a {
+  color: white;
+  font-family: 'DynaPuff', cursive;
+  font-size: 3vw;
+  text-decoration: none;
+}
+
+.main_nav_topic button, .main_nav_introduction button {
+  right: 0;
+  bottom: 5%;
+}
+
+.main_nav_topic button {
+  background-color: #F4C3C3;
+}
+
+.main_nav_game button {
+  left: 35vw;
+  bottom: 0;
+  background-color: #c6deff;
+}
+
+.main_nav_introduction button {
+  background-color: #ffe1ab;
+}
+
