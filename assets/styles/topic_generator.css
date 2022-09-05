@@ -4,7 +4,7 @@
 }
 
 main {
-  width: 100%;
+  width: 100vw;
   height: 90vh;
   padding-top: 10vh;
   background-color: #F4C3C3;
@@ -135,26 +135,30 @@ main {
   opacity: 0.6;
 }
 
-@media (max-width: 499px) {
+@media (max-width: 375px) {
   main{
     width: 100%;
   }
   .title{
-    font-size: 35px;
-    padding-top: 60px;
+    font-size: 200%;
+    padding-top: 8vh;
   }
   .txt_gene{
-    margin-top: 70px;
+    padding-top: 6vh;
   }
   .topicBox{
-    width: 300px;
+    width: 80vw;
+    font-size: 130%;
+    padding-bottom: 0.7vh;
   }
   #btn{
-    width: 300px;
+    width: 70vw;
   }
   .q-collection{
     width: 375px;
     text-align: center;
   }
-
+  #questions li{
+    font-size: 80%;
+  }
 }

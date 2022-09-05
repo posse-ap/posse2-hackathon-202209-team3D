@@ -206,7 +206,8 @@ header a {
       transition: 0.5s;
     }
     .overlay_navigation.show {
-      opacity: 0.8;
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.807);
       pointer-events: auto;
     }
     .overlay_navigation ul {
@@ -218,6 +219,7 @@ header a {
       align-items: center;
     }
     .overlay_navigation a {
+      display: block;
       width: 60%;
       height: 10%;
       margin: 10% 0;
@@ -236,7 +238,7 @@ header a {
       transition: opacity 0.3s, transform 0.6s ;
       }
       .show a {
-        opacity: 1;
+        opacity: 1 !important;
         transform: none;
         z-index: 1;
       }
