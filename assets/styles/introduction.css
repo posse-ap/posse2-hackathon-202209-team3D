@@ -7,6 +7,10 @@ body {
   line-height: 1.5;
 }
 
+main {
+  padding-top: 15vh;
+}
+
 h1 {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
