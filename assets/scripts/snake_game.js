@@ -446,13 +446,20 @@
       });
     }
 
+    // phone
     if (windowWidth < 415) {
       const map = document.getElementById("js-map");
-      const overMenu = document.getElementById("js-overMenu");
+      const overMenu = document.getElementById("js-overMenu-phone");
       const score = document.getElementById("js-score");
-      const restartButton = document.getElementById("js-restartButton");
+      const restartButton = document.getElementById("js-restartButton-phone");
       const startMenu = document.getElementById("js-startMenu");
       const startButton = document.getElementById("js-startButton");
+      const ruleButton = document.getElementById("js-ruleButton-phone");
+      const leftButton = document.getElementById("js-leftButton");
+      const rightButton = document.getElementById("js-rightButton");
+      const upButton = document.getElementById("js-upButton");
+      const downButton = document.getElementById("js-downButton");
+      const phoneButton = document.getElementById("js-phoneButton");
       var timer;
 
       function Snake() {
@@ -487,6 +494,8 @@
         this.gameOver = function () {
           clearInterval(timer);
           map.classList.add("disabled");
+          overMenu.classList.remove("disabled");
+          phoneButton.classList.add("disabled");
           overMenu.classList.remove("disabled");
           let snakeLength = this.bodyPosition.length;
           score.textContent = snakeLength;
@@ -608,42 +617,48 @@
       snake.show();
       food.show();
 
-      document.body.onkeydown = function (e) {
-        let event = e || window.event;
-        switch (event.keyCode) {
-          case 38:
-            if (snake.direction !== "down") {
-              snake.direction = "up";
-            }
-            break;
-          case 40:
-            if (snake.direction !== "up") {
-              snake.direction = "down";
-            }
-            break;
-          case 37:
-            if (snake.direction !== "right") {
-              snake.direction = "left";
-            }
-            break;
-          case 39:
-            if (snake.direction !== "left") {
-              snake.direction = "right";
-            }
-            break;
+      // direction
+      leftButton.addEventListener("click", () => {
+        if (snake.direction !== "right") {
+          snake.direction = "left";
         }
-      };
+      });
+
+      rightButton.addEventListener("click", () => {
+        if (snake.direction !== "left") {
+          snake.direction = "right";
+        }
+      });
+
+      upButton.addEventListener("click", () => {
+        if (snake.direction !== "down") {
+          snake.direction = "up";
+        }
+      });
+
+      downButton.addEventListener("click", () => {
+        if (snake.direction !== "up") {
+          snake.direction = "down";
+        }
+      });
 
       startButton.addEventListener("click", () => {
         startMenu.classList.add("disabled");
         map.classList.remove("disabled");
+        phoneButton.classList.remove("disabled");
         timer = setInterval("snake.run()", 200);
       });
 
       restartButton.addEventListener("click", () => {
         overMenu.classList.add("disabled");
         map.classList.remove("disabled");
+        phoneButton.classList.remove("disabled");
         timer = setInterval("snake.run()", 200);
+      });
+
+      ruleButton.addEventListener("click", () => {
+        overMenu.classList.add("disabled");
+        startMenu.classList.remove("disabled");
       });
     }
   }
