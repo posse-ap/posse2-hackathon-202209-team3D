@@ -1,17 +1,66 @@
 body {
   margin: 0;
-  background-color: #EFF5FD;
+  background-color: #eff5fd;
+}
+
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: white;
+  text-align: center;
+  color: white;
+  display: flex;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+  width: 260px;
+}
+
+/* fadeUpをするアイコンの動き */
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* START MAIN  */
 main {
   padding-top: 10vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.start_menu_section{
+.start_menu_section {
   width: 70vw;
   display: flex;
   flex-direction: column;
@@ -32,13 +81,13 @@ main {
   justify-content: center;
   align-items: center;
 
-  margin-top:10vh;
+  margin-top: 10vh;
   border-radius: 20px;
   box-shadow: 0 0 30px #00000085;
 }
 
-.start_menu_section_title{
-  font-family: 'Berkshire Swash', cursive;
+.start_menu_section_title {
+  font-family: "Berkshire Swash", cursive;
   font-size: 7vw;
   color: black;
 }
@@ -58,8 +107,8 @@ main {
   margin-right: 15px;
 }
 
-.start_menu_instruction_mapsize h1{
-  font-family: 'DotGothic16', sans-serif;
+.start_menu_instruction_mapsize h1 {
+  font-family: "DotGothic16", sans-serif;
   margin-top: 80px;
   font-size: 3vw;
   text-align: center;
@@ -67,29 +116,39 @@ main {
   margin-bottom: 20px;
 }
 
+.start_menu_instruction_rule h1 {
+  margin-top: 2vh;
+}
+
+.start_menu_instruction h1:hover {
+  transform: scale(120%);
+  transition: 0.5s;
+}
+
 .start_menu_instruction_mapsize li {
   list-style-type: none;
   text-align: center;
   margin-top: 10px;
-  font-family: 'DotGothic16', sans-serif;
+  font-family: "DotGothic16", sans-serif;
   margin-top: 10px;
   font-size: 2vw;
 }
 
 .start_menu_instruction_rule {
   margin-top: 80px;
+  margin-bottom: 50px;
 }
 
-.start_menu_instruction_rule h1{
-  font-family: 'DotGothic16', sans-serif;
+.start_menu_instruction_rule h1 {
+  font-family: "DotGothic16", sans-serif;
   font-size: 3vw;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.start_menu_instruction_rule li{ 
+.start_menu_instruction_rule li {
   list-style-type: none;
-  font-family: 'Reggae One', cursive;
+  font-family: "Reggae One", cursive;
   margin-top: 10px;
   font-size: 2vw;
   text-align: center;
@@ -100,28 +159,29 @@ main {
   flex-direction: row;
 }
 
-.start_menu_instruction_rule div img{
+.start_menu_instruction_rule div img {
   margin-top: 30px;
   width: 35vw;
 }
 
-.start_menu_section button, .over_menu_section button {
+.start_menu_section button, .over_menu_section button, #js-overMenu-phone button {
   width: 40vw;
-  height: 15%;
+  height: 8vh;
   margin-top: 2vh;
 
   border-radius: 50px;
   background-color: white;
   border: 3px solid rgb(0, 0, 0);
 
-  font-family: 'DynaPuff', cursive;
+  font-family: "DynaPuff", cursive;
   color: black;
   font-size: 3vw;
 
   cursor: pointer;
 }
 
-.start_menu_section button:hover, .over_menu_section button:hover {
+.start_menu_section button:hover,
+.over_menu_section button:hover {
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.378);
   border: 10px double rgb(0, 0, 0);
   transition: 0.3s;
@@ -141,7 +201,7 @@ main {
   box-shadow: 5px 5px 8px #86b8f9; */
 }
 
-.over_menu_section section{
+.over_menu_section section {
   width: 80vw;
   height: 50vh;
   display: flex;
@@ -151,7 +211,8 @@ main {
   margin-bottom: 2vh;
 }
 
-.over_menu_sectionA, .over_menu_sectionB {
+.over_menu_sectionA,
+.over_menu_sectionB {
   width: 35vw;
   height: 100%;
   display: flex;
@@ -162,7 +223,7 @@ main {
 
   border-radius: 20px;
 
-  font-family: 'DotGothic16', sans-serif;
+  font-family: "DotGothic16", sans-serif;
   font-size: 3vw;
 }
 
@@ -178,18 +239,84 @@ main {
   margin-left: 2.5vw;
 }
 
-.over_menu_sectionA h1, .over_menu_sectionB h1 {
-  margin-bottom: 50px;
+.over_menu_section_phone_frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.main_map{
+.over_menu_section_phone {
+  width: 70vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 20px;
+
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 5vw;
+
+  background-color: #b6d2f7;
+  box-shadow: 4px 4px 10px #73affd;
+  margin-left: 2.5vw;
+  margin-top: 10vh;
+}
+
+.over_menu_sectionA h1, .over_menu_sectionB h1 {
+  margin-bottom: 50px;
+} 
+
+.over_menu_section_phone h3 {
+  margin-top: 20px;
+}
+
+#js-phoneButton {
+  width: 100px;
+  height: 65px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.phone_button {
+  width: 30px;
+  height: 30px;
+}
+
+.phone_button:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.phone_button:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 35px;
+}
+
+.phone_button:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+}
+
+.phone_button:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.main_map {
   position: relative;
   width: 1000px;
   height: 600px;
 
   margin-top: 10vh;
   background: #ffffff;
-  border: px dotted #2994D1;
+  border: px dotted #2994d1;
   border-radius: 30px;
   box-shadow: 0 0 30px #00000085;
 }
@@ -206,6 +333,12 @@ main {
   position: absolute;
 }
 
+.snake {
+  border-radius: 50%;
+  background-color: #2994D1;
+  position: absolute;
+}
+
 .food {
   background-color: #660000;
   border-radius: 50%;
@@ -216,46 +349,59 @@ main {
   width: 60px;
   height: 72px;
   margin-top: 10vh;
-
 }
 
 .arrows path {
-  stroke: #2994D1;
+  stroke: #2994d1;
   fill: transparent;
-  stroke-width: 1px;  
+  stroke-width: 1px;
   animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite; 
+  -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .arrows path.a1 {
-  animation-delay:-1s;
-  -webkit-animation-delay:-1s;
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
 }
 
 .arrows path.a2 {
-  animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s;
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
 }
 
-.arrows path.a3 { 
-  animation-delay:0s;
-  -webkit-animation-delay:0s;
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
 }
 
 .disabled {
@@ -283,6 +429,7 @@ main {
     position: relative;
     width: 300px;
     height: 500px;
+    margin-top: 5vh;
   }
 }
 /* END MAIN  */
