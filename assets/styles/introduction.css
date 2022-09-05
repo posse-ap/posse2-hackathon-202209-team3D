@@ -88,9 +88,26 @@ img {
   transform: none;
   opacity: 1;
   position: relative;
-}
 
 /* name_list */
+.name-list{
+  width: 1000px;
+  height: 300px;
+  margin-top: 50px;
+  margin: 50px auto;
+  background-color: pink;
+  /* font-size: 20px; */
+}
+
+.name-row{
+  display: flex;
+  width: 100%;
+}
+
+.name-tag{
+  width: 12.5%;
+  text-align: center;
+}
 /* responsive design */
 @media (min-width: 500px) and (max-width: 799px) {
   .main_map {
@@ -139,3 +156,4 @@ img {
     position: relative;
   }
 }/*# sourceMappingURL=introduction.css.map */
+
