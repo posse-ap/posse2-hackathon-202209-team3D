@@ -6,6 +6,7 @@
 main {
   position: relative;
   width: 100%;
+  width: 90vw;
   height: 90vh;
   padding-top: 10vh;
   background-color: #F4C3C3;
@@ -18,15 +19,18 @@ main {
   color: white;
   text-align: center;
   color: white;
+  text-shadow: 0.5px 0.5px 2px black;
 }
 
 .txt_gene {
   padding-top: 10vh;
   padding-bottom: 1vh;
   font-size: 22px;
+  font-weight: 600;
   color: white;
   display: block;
   text-align: center;
+  text-shadow: 0.5px 0.5px 1.5px black;
 }
 
 .topicBox {
@@ -41,6 +45,7 @@ main {
   text-align: center;
   align-items: center;
   margin-bottom: 4vh;
+  box-shadow:  2px 2px 8px inset;
 }
 
 .circle1{
