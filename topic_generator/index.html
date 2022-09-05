@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>トップページ</title>
   <link rel="stylesheet" href="../assets/styles/reset.css">
-  <link rel="stylesheet" href="../assets/styles/toppage.css">
+  <link rel="stylesheet" href="../assets/styles/topic_generator.css">
   <link rel="stylesheet" href="../assets/styles/common.css">
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,24 +15,37 @@
 </head>
 
 <body>
+  <!-- START HEADER WITH RESPONSIVE DESIGN -->
   <header>
-
     <div class="logo_area">
-        <img class="bloom_logo_img" src="./img/BLOOM_logo_color_modified.png" alt="">
-        <img class="posse_logo_img" src="./img/logo copy.svg" alt="">
+      <div class="logos_set">
+        <img class="bloom_logo_img" src="../img/BLOOM_logo_color_modified.png" alt="">
+        <img class="posse_logo_img" src="../img/logo copy.svg" alt="">
+      </div>
     </div>
 
-    <nav>
+    <nav class="pc_navigation">
       <ul>
-        <li><a href="./top_page/index.html">トップページ</a></li>
-        <li><a href="./topic_generator/index.html">話題</a></li>
-        <li><a href="./snake_game/index.html">ゲーム</a></li>
-        <li><a href="./introduction/index.html">自己紹介</a></li>
-        <!-- リストの項目名は後からおしゃれな名前に変えます -->
+        <a href="./index.html"><li>話題ジェネレータ</li></a>
+        <a href="../snake_game/index.html"><li>対戦型スネークゲーム</li></a>
+        <a href="../introduction/index.html"><li>3.0期生の仲間</li></a>
       </ul>
     </nav>
 
+    <div class="hamburger_button_area">
+      <div class="hamburger_button" id="menu_button"></div>
+    </div>
   </header>
+
+    <nav class="overlay_navigation">
+        <ul>
+          <a href="./index.html"><li>話題ジェネレータ</li></a>
+          <a href="../snake_game/index.html"><li>対戦型スネークゲーム</li></a>
+          <a href="../introduction/index.html"><li>3.0期生の仲間</li></a>
+        </ul>
+    </nav>
+    <!-- END HEADER WITH RESPONSIVE DESIGN -->
+
   <main>
     <div class="container">
       <section class="title">
@@ -40,6 +53,9 @@
       </section>
       <div class="txt_gene">\\次に話す内容は//</div>
       <div class="topicBox" id="tBox">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
       </div>
       
       <div id="btn">
@@ -55,5 +71,6 @@
   
   <script src="../assets/scripts/common.js"></script>
   <script src="../assets/scripts/toppage.js"></script>
+  <script src="../assets/scripts/common.js"></script>
 </body>
 </html>
