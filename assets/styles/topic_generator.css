@@ -4,6 +4,9 @@
 }
 
 main {
+  position: relative;
+  width: 100%;
+  width: 90vw;
   width: 100vw;
   height: 90vh;
   padding-top: 10vh;
@@ -32,7 +35,6 @@ main {
 }
 
 .topicBox {
-  position: relative;
   width: 700px;
   height: 150px;
   border-radius: 10px;
@@ -51,11 +53,15 @@ main {
   position: absolute;
   width: 300px;
   height: 300px;
-  border: 10px solid greenyellow;
+  line-height: 300px;
+  border: 10px solid transparent;
   border-radius: 30% 70% 32% 68% / 69% 21% 79% 31% ;
   background: transparent;
-  top: 50%;
+  font-weight: bold;
+  font-size: 30px;
+  top: 54%;
   left: 50%;
+  text-align: center;
   transform: translate(-50%, -50%);
 }
 
@@ -63,7 +69,7 @@ main {
   position: absolute;
   width: 300px;
   height: 300px;
-  border: 10px solid greenyellow;
+  border: 10px solid transparent;
   border-radius: 82% 18% 25% 75% / 50% 50% 50% 50%   ;
   background: transparent;
   top: 50%;
@@ -75,13 +81,17 @@ main {
   position: absolute;
   width: 300px;
   height: 300px;
-  border: 10px solid greenyellow;
-  border-radius: 17% 83% 84% 16% / 13% 52% 48% 87%  ;
+  border: 10px solid transparent;
+  border-radius: 17% 83% 84% 16% / 13% 52% 48% 87% ;
   background: transparent;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 } 
+
+.hidden{
+  display: none;
+}
 
 .q-collection {
   width: 600px;
