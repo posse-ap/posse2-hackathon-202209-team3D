@@ -26,9 +26,7 @@ img {
   width: 100%;
 }
 
-img,
-h1,
-h2 {
+img,{
   transform: scale(1.15);
   transition: transform 1.9s ease;
 }

@@ -6,6 +6,9 @@ body {
   font-size: 13px;
   line-height: 1.5;
 }
+]h1::before{
+
+}
 
 h1 {
   font-size: 50px;
@@ -13,6 +16,9 @@ h1 {
   font-family: "Zen Antique", serif;
   margin: 10%;
   background: linear-gradient(transparent 40%, #ffd6c2 100%);
+  display: block;
+  transform: scale(1.5);
+  transition: 3s;
 }
 
 h2 {
@@ -27,12 +33,12 @@ img {
   width: 100%;
 }
 
-img,
-h1,
-h2 {
+img {
   transform: scale(1.15);
   transition: transform 1.9s ease;
 }
+
+h1,h2{}
 
 /* header */
 /* slide */
