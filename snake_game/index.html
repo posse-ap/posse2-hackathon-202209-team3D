@@ -75,6 +75,7 @@
           <h1>説明</h1>
           <li>地図の端に触れると、OUT!</li>
           <li>自分の頭が自分の体に触れると、OUT!</li>
+          <h1>PC追加</h1>
           <li>自分の頭が相手の体に触れると、OUT!</li>
           <li>Player1: 左に座る</li>
           <li>Player2: 右に座る</li>
@@ -90,12 +91,17 @@
 
         </div>
       </section>
-
-
-
     </section>
 
-    <div id="js-map" class="main_map disabled"></div>
+    <div id="js-map" class="main_map disabled">
+    </div>
+
+    <div id="js-phoneButton">
+      <button id="js-phoneButtonLeft">←</button>
+      <button id="js-phoneButtonRight">→</button>
+      <button id="js-phoneButtonUp">↑</button>
+      <button id="js-phoneButtonDown">↓</button>
+    </div>
 
     <section id="js-overMenu" class="over_menu_section disabled">
       <section>
@@ -108,6 +114,19 @@
           <h1 id="js-overTitleB"></h1>
           <h2>Your snake's length:</h2>
           <h3 id="js-scoreB"></h3>
+        </div>
+      </section>
+
+      <button id="js-restartButton">Try Again!</button>
+
+      <button id="js-ruleButton">Rule</button>
+    </section>
+
+    <section id="js-overMenu-phone" class="over_menu_section">
+      <section>
+        <div class="over_menu_section">
+          <h2>Your snake's length:</h2>
+          <h3 id="js-score"></h3>
         </div>
       </section>
 
