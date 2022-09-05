@@ -24,9 +24,11 @@ main {
   padding-top: 10vh;
   padding-bottom: 1vh;
   font-size: 22px;
+  font-weight: 600;
   color: white;
   display: block;
   text-align: center;
+  text-shadow: 0.5px 0.5px 1.5px black;
 }
 
 .topicBox {
