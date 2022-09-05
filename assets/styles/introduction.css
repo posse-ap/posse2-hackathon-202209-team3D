@@ -10,13 +10,16 @@ body {
 h1 {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
-  font-family: "Pacifico", cursive;
+  font-family: "Zen Antique", serif;
   margin: 10%;
   background: linear-gradient(transparent 40%, #ffd6c2 100%);
 }
 
 h2 {
   font-size: 30px;
+  font-family: "Kaisei Tokumin", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Zen Antique", serif;
   padding: 4%;
 }
 
@@ -24,9 +27,7 @@ img {
   width: 100%;
 }
 
-img,
-h1,
-h2 {
+img {
   transform: scale(1.15);
   transition: transform 1.9s ease;
 }
@@ -34,15 +35,16 @@ h2 {
 /* header */
 /* slide */
 /*スライドショーの作成*/
-/* name-list */
 .swiper {
   overflow: visible !important;
 }
 
 .swiper-slide {
-  width: 70%;
+  width: 100%;
+  height: 80vh;
   overflow: hidden;
   outline: 2px solid red;
+  background-color: white;
   display: flex;
   margin: 0 auto;
 }
@@ -84,4 +86,73 @@ h2 {
   transform: none;
   opacity: 1;
   position: relative;
+}
+
+/* name_list */
+.name-list{
+  width: 1000px;
+  height: 300px;
+  margin-top: 50px;
+  margin: 50px auto;
+  background-color: pink;
+  /* font-size: 20px; */
+}
+
+.name-row{
+  display: flex;
+  width: 100%;
+}
+
+.name-tag{
+  width: 12.5%;
+  text-align: center;
+}
+/* responsive design */
+@media (min-width: 500px) and (max-width: 799px) {
+  .main_map {
+    position: relative;
+    width: 500px;
+    height: 600px;
+  }
+}
+@media (max-width: 499px) {
+  .swiper-slide {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    outline: 2px solid red;
+    display: block;
+  }
+  .swiper-slide .slide_img {
+    width: 100vw;
+  }
+  .swiper-slide .slide_text {
+    width: 100vw;
+  }
+  .swiper-slide img {
+    width: 100vw;
+    height: 100%;
+    max-width: 90%;
+    padding: 5%;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 0;
+    margin: 0 auto;
+    z-index: 0;
+  }
+  .swiper-slide ::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 61, 125, 0.1);
+  }
+  .swiper-slide-active img {
+    transform: none;
+    opacity: 1;
+    position: relative;
+  }
 }/*# sourceMappingURL=introduction.css.map */
+
