@@ -205,7 +205,7 @@ header a {
       pointer-events: none;
       transition: 0.5s;
     }
-    .show {
+    .overlay_navigation.show {
       opacity: 0.8;
       pointer-events: auto;
     }
@@ -238,6 +238,7 @@ header a {
       .show a {
         opacity: 1;
         transform: none;
+        z-index: 1;
       }
       .show a:nth-child(1){
         transition-delay: 0.2s;
