@@ -107,7 +107,7 @@ main {
   background: transparent;
   font-weight: bold;
   font-size: 30px;
-  top: 54%;
+  top: 48%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -195,6 +195,9 @@ main {
 @media (max-width: 375px) {
   main {
     width: 100%;
+  }
+  .circle1 {
+    top: 45%;
   }
   .title {
     font-size: 200%;
