@@ -1,43 +1,54 @@
-.container{
-  
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: #F4C3C3;
+}
+
+.container {
   /* text-align: center; */
   justify-content: center;
 }
 
-.title{
-  margin-top: 100px;
+.title {
+  padding-top: 100px;
   font-size: 50px;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'RocknRoll One', sans-serif;
+  color: white;
   text-align: center;
+  color: white;
+}
+
+.txt_gene {
+  font-size: 22px;
+  color: white;
   display: block;
-  background:linear-gradient(135deg,#fed878 0%, #fa505e 100%);
-  background: -webkit-linear-gradient(-45deg,#fed878 0%, #fa505e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 
-.topicBox{
+.topicBox {
   width: 700px;
-  height:100px;
-  border: 3px solid black;
+  height: 150px;
   border-radius: 10px;
   margin: 0 auto;
-  line-height: 100px;
+  line-height: 150px;
   font-size: 30px;
   font-weight: 700;
+  background-color: white;
   text-align: center;
-  margin-top: 100px;
+  align-items: center;
   margin-bottom: 50px;
-  
+
 }
 
-.q-collection{
+.q-collection {
   width: 600px;
   margin: 0 auto;
 }
 
-#questions > li {
+#questions>li {
   list-style: disc;
   font-weight: bold;
   font-size: 20px;
@@ -46,30 +57,32 @@
 
 }
 
-#btn{
-  background-color: #3498db;
+#btn {
+  color: white;
+  background-color: #97C2DE;
   padding: 8px;
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
-  color: white;
   font-size: 25px;
   line-height: 40px;
   font-weight: bold;
-  box-shadow: 4px 4px 0 #2880b9;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
   user-select: none;
   width: 400px;
   height: 40px;
   margin: 0 auto;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-#btn.disabled{
+#btn:hover {
+  transform: translateY(5px);
+  box-shadow: 0 0 0;
+}
+
+#btn.disabled {
   background-color: #ccc;
   box-shadow: 0 4px 0 #bbb;
   opacity: 0.6;
 }
-
-
-
-
