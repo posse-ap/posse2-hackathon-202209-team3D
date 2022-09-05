@@ -23,8 +23,12 @@ header {
   z-index: 1;
 }
 
-.logo_area {
+header a {
   width: 30%;
+  height: 100%;
+}
+.logo_area {
+  width: 100%;
   padding-left: 5%;
   height: 100%;
   display: flex;
@@ -49,7 +53,7 @@ header {
 }
 
 .pc_navigation {
-  width: 60%;
+  width: 40%;
   height: 100%;
   padding-right: 5%;
 }
@@ -67,14 +71,23 @@ header {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background-color: #ffd6c2;
   font-size: 70%;
   border-radius: 5px;
-  box-shadow: 4px 4px 0 2px #a0897e;
   transition: 0.3s;
   list-style: none;
-  background-color: #ffd6c2;
   color: #262626;
+  }
+  .pc_navigation ul a:nth-child(1) {
+    background-color: #F4C3C3;
+    box-shadow: 4px 4px 6px #a83737;
+  }
+  .pc_navigation ul a:nth-child(2) {
+    background-color: #c6deff;
+    box-shadow: 4px 4px 6px #4894ff;
+  }
+  .pc_navigation ul a:nth-child(3) {
+    background-color: #ffe1ab;
+    box-shadow: 4px 4px 6px #ffbf47;
   }
   .pc_navigation a:nth-child(2) {
     font-size: 65%;
