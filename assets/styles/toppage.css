@@ -1,3 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 10vh;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 8px 0px 32px 8px grey;
+}
+
+.logo_area {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: bottom;
+  justify-content: center;
+}
+.logos_set {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bloom_logo_img {
+  height: 60%;
+  display: block;
+}
+.posse_logo_img {
+  height: 20%;
+  display: block;
+  background-color: #fff;
+}
+
+nav {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  width: 20%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #ffd6c2;
+  font-size: 75%;
+  border-radius: 5px;
+  box-shadow: 4px 4px 0 2px #a0897e;
+  transition: 0.3s;
+}
+nav ul li:hover {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+  background-color: #ffa072;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: blue;
+}
+
 main {
   width: 100%;
   height: 100vh;
