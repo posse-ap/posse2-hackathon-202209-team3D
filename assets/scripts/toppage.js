@@ -25,28 +25,44 @@
   
   btn.addEventListener('click',()=>{
     if(count === 10){
-      tBox.innerHTML = 'Finish!!';  
-      btn.classList.add('disabled')    
+      tBox.innerHTML = 'Finish!!';
+      btn.classList.add('disabled');
       return;
     }
-    
+
+    function topicShow(){
+      let i = num.splice(Math.floor(Math.random()*num.length),1)[0];
+      // const tBox = document.getElementById('tBox');
+      tBox.innerHTML = topicSet[i];
+      const qCollection = document.getElementById('q-collection');
+      for(let q=0; q<questionSet[i].length; q++){
+        const li = document.createElement('li');
+        li.textContent = questionSet[i][q];
+        questions.appendChild(li);
+      }
+    }
+
     while(questions.firstChild){
       questions.removeChild(questions.firstChild);
     }
-    let i = num.splice(Math.floor(Math.random()*num.length),1)[0];
-    // const tBox = document.getElementById('tBox');
-    tBox.innerHTML = topicSet[i];
-    const qCollection = document.getElementById('q-collection');
-    for(let q=0; q<questionSet[i].length; q++){
-      const li = document.createElement('li');
-      li.textContent = questionSet[i][q];
-      questions.appendChild(li);
+    tBox.innerHTML = '';
+
+
+
+    const circles = document.getElementById('circles');
+    circles.classList.remove('hidden');
+    function wait(){
+      circles.classList.add('hidden');
+      topicShow();
     }
-    count ++;
-    
+    setTimeout(wait,1000);
 
     
     
+
+
+
+    count ++;
   })
   
   
