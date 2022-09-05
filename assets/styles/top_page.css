@@ -93,7 +93,7 @@ main {
 100% {opacity:0}
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
+@-webkit-keyframes arrow
 {
 0% {opacity:0}
 40% {opacity:1}
@@ -103,22 +103,18 @@ main {
 
 .arrows path.a1 {
   animation-delay:-1s;
-  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  -webkit-animation-delay:-1s;
 }
 
 .arrows path.a2 {
   animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  -webkit-animation-delay:-0.5s;
 }
 
 .arrows path.a3 { 
   animation-delay:0s;
-  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  -webkit-animation-delay:0s;
 }
-
-
-
-
 
 /* main_nav */
 .main_nav {
@@ -139,7 +135,7 @@ main {
 }
 
 .main_nav_game {
-  margin-top: 20vh;
+  margin-bottom: 20vh;
 }
 
 .main_nav_introduction div {
@@ -150,6 +146,9 @@ main {
   font-family: 'Rampart One', cursive;
   font-size: 6vw;
 }
+
+.main_nav_topic h1::after, .main_nav_game h1::after, .main_nav_introduction h1::after {
+} 
 
 .main_nav_topic p, .main_nav_game p, .main_nav_introduction p {
   margin-top: 10%;
@@ -169,6 +168,21 @@ main {
   border: none;
 
   position: absolute;
+
+  color: white;
+  font-family: 'DynaPuff', cursive;
+  font-size: 3vw;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: 1s;
+}
+
+.main_nav_topic button:hover, .main_nav_game button:hover, .main_nav_introduction button:hover {
+  box-shadow: 3px 3px 5px gray;
+  transform: scale(110%);
+  transition: 0.5s;
 }
 
 .main_nav_topic a, .main_nav_game a, .main_nav_introduction a {
