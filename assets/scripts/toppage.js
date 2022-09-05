@@ -1,6 +1,14 @@
 'use strict';
 
 {
+  //logoの表示
+$(window).on('load',function(){
+  $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+  $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+});
+}
+
+{
   const btn = document.getElementById('btn');
   const topicSet = ['お金や健康に関する心配事','自分がイライラしてしまうこと','人生で幸福になれること','自分が改善したいこと','将来の夢・野望','自分の性生活に関する事','自分の弱点やマイナスな面','自分が許せないこと','自分の趣味・興味','自分の失敗談',];
   
