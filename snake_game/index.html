@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snake Game</title>
+  <title>対戦型スネークゲーム</title>
+  <script src="../assets/scripts/jquery-3.6.1.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -17,19 +18,27 @@
 </head>
 
 <body>
-<!-- START HEADER WITH RESPONSIVE DESIGN -->
-<header>
-  <div class="logo_area">
-    <div class="logos_set">
-      <img class="bloom_logo_img" src="./img/BLOOM_logo_color_modified.png" alt="">      <img class="posse_logo_img" src="../img/logo copy.svg" alt="">
+  <div id="splash">
+    <div id="splash_logo">
+      <img src="../img/BLOOM_logo_color_modified.png" alt="BLOOMロゴマーク" class="fadeUp">
     </div>
   </div>
+<!-- START HEADER WITH RESPONSIVE DESIGN -->
+<header>
+  <a href="../top_page/index.html">
+    <div class="logo_area">
+      <div class="logos_set">
+        <img class="bloom_logo_img" src="../img/BLOOM_logo_color_modified.png" alt="">
+        <img class="posse_logo_img" src="../img/logo copy.svg" alt="">
+      </div>
+    </div>
+  </a>
 
   <nav class="pc_navigation">
     <ul>
-      <a href="../topic_generator/index.html"><li>話題ジェネレータ</li></a>
-      <a href="./index.html"><li>対戦型スネークゲーム</li></a>
-      <a href="../introduction/index.html"><li>3.0期生の仲間</li></a>
+      <a href="../topic_generator/index.html"><li>話題</li></a>
+      <a href="../snake_game/index.html"><li>ゲーム</li></a>
+      <a href="../introduction/index.html"><li>3.0期生</li></a>
     </ul>
   </nav>
 
@@ -54,11 +63,13 @@
         <div class="start_menu_section_title">SNAKE GAME</div>
         <button id="js-startButton">Start!</button>
       </section>
+
       <svg class="arrows">
         <path class="a1" d="M0 0 L30 32 L60 0"></path>
         <path class="a2" d="M0 20 L30 52 L60 20"></path>
         <path class="a3" d="M0 40 L30 72 L60 40"></path>
       </svg>
+
       <section class="start_menu_instruction">
         <div class="start_menu_instruction_mapsize">
           <h1>MAP SIZE</h1>

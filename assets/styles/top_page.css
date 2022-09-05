@@ -1,3 +1,51 @@
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: white;
+  text-align:center;
+  color:white;
+  display: flex;
+  }
+  
+  /* Loading画像中央配置　*/
+  #splash_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Loading アイコンの大きさ設定　*/
+  #splash_logo img {
+    width: 260px;
+  }
+  
+  /* fadeUpをするアイコンの動き */
+  
+  .fadeUp{
+  animation-name: fadeUpAnime;
+  animation-duration:0.75s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 /* main */
 main {
   padding-top: 10vh;
@@ -44,7 +92,7 @@ main {
 }
 
 .main_hero.load .main_hero_title1::after {
-  width: 40vw;
+  width: 43vw;
   background-color: #F4C3C3;
   transition: 1s;
   transition-delay: 1s;
@@ -58,7 +106,7 @@ main {
 }
 
 .main_hero.load .main_hero_title3::after {
-  width: 33vw;
+  width: 34vw;
   background-color: #ffe1ab;
   transition: 1s;
   transition-delay: 3s;
@@ -136,6 +184,12 @@ main {
   justify-content: space-between;
   position: relative;
   margin-bottom: 15vh;
+  opacity: 0;
+}
+
+.main_nav_topic.scroll, .main_nav_game.scroll, .main_nav_introduction.scroll {
+  opacity: 1;
+  transition: 3s;
 }
 
 .main_nav_game {
@@ -163,6 +217,7 @@ main {
   border-radius: 50%;
   background-color: #2994D1;
 } 
+
 .main_nav_topic h1::after, .main_nav_game h1::after, .main_nav_introduction h1::after {
   width: 100%;
   height: 100%;

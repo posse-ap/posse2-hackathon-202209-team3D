@@ -7,8 +7,10 @@ body {
 }
 
 main{
+  padding-top: 15vh;
   img {
     width: 100%;
+    height: 100%;
     transform: scale(1.15);
     transition: transform 1.9s ease;
   }
@@ -18,7 +20,7 @@ h1 {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
   font-family: "Zen Antique", serif;
-  margin: 10%;
+  margin: 5%;
   background: linear-gradient(transparent 40%, #ffd6c2 100%);
 }
 
@@ -35,21 +37,23 @@ h2 {
 
 /* slide */
 .swiper {
-  overflow: visible !important;
+  overflow: hidden !important;
 }
 
 .swiper-slide {
-  width: 100%;
-  height: 80vh;
+  width: 100vw;
+  height: 60vh;
   overflow: hidden;
-  outline: 2px solid red;
+  border: 4px solid #f4c3c3;
   background-color: white;
+  border-radius: 30px;
   display: flex;
   margin: 0 auto;
 
   .slide_img {
     width: 50%;
     position: relative;
+    opacity: 1;
 
     ::before {
       content: ""; /* 疑似要素に必須 */
@@ -94,17 +98,42 @@ h2 {
   }
 }
 /* name_list */
+
+.swiper-pagination-bullet {
+  height: 10%;
+  width: 7%;
+  background-color: #4894ff;
+  color: white;
+  font-size: 120%;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 2px 2px #2e64af;
+  opacity: 1;
+  transition: 0.3s;
+}
+.swiper-pagination-bullet:hover {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+  color: lightgrey;
+}
+
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 10px;
   left: 0;
   width: 100%;
   position: relative;
   padding-top: 5vh;
-  margin: 15px;
+  margin: 10px;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: var(--swiper-pagination-bullet-horizontal-gap,20px);
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+  padding: 3px;
 }
 /* responsive design */
 @media (min-width: 800px) {
- 
 }
 
 @media (min-width: 500px) and (max-width: 799px) {
@@ -120,7 +149,7 @@ h2 {
     width: 100%;
     height: auto;
     overflow: hidden;
-    outline: 2px solid red;
+    border: 4px solid #f4c3c3;
     display: block;
 
     .slide_img{
