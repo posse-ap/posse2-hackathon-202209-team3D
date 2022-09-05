@@ -86,26 +86,26 @@ img {
   transform: none;
   opacity: 1;
   position: relative;
+}
 
 /* name_list */
-.name-list{
-  width: 1000px;
-  height: 300px;
-  margin-top: 50px;
-  margin: 50px auto;
-  background-color: pink;
-  /* font-size: 20px; */
-}
-
-.name-row{
-  display: flex;
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
   width: 100%;
+  position: relative;
+  padding-top: 5vh;
+  padding: 15px;
 }
 
-.name-tag{
-  width: 12.5%;
-  text-align: center;
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 2vh var(--swiper-pagination-bullet-horizontal-gap,9vw);
+
+.swiper-pagination-bullet {
+    padding: 10px;
+    
 }
+
 /* responsive design */
 @media (min-width: 500px) and (max-width: 799px) {
   .main_map {
@@ -154,4 +154,3 @@ img {
     position: relative;
   }
 }/*# sourceMappingURL=introduction.css.map */
-

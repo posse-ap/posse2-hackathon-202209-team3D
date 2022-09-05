@@ -95,7 +95,14 @@ img {
   }
 }
 /* name_list */
-
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  position: relative;
+  padding-top: 5vh;
+  margin: 15px;
+}
 /* responsive design */
 @media (min-width: 800px) {
  
