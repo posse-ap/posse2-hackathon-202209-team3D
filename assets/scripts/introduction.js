@@ -1,4 +1,13 @@
-let labels = ["飯野功志朗", "池形凌", "伊藤瑠星", "稲継彪大", "内海航大", "大串真由", "川村優奈", "河内光太", "木下倭", "神保舞琴", "臺本純華", "田上誠也", "竹内優", "田中友里恵", "冨永恵祐", "内藤麻優子", "中井厚博", "縄野佑匡", "西田優希", "野原春菜", "梅嘉麒", "原拓海", "橋本克樹", "東明日菜", "日置実里", "廣川由奈", "廣澤慈英", "福田沙良", "桝井正樹", "松本はるか", "又吉見秋", "村神千尋", "本村晴基"];
+{
+    //logoの表示
+$(window).on('load',function(){
+        $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+        $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+    });
+}
+
+
+let labels = ["飯野功志朗", "池形凌", "伊藤瑠星", "稲継彪大", "内海航大", "大串真由", "川村優奈", "河内光太", "木下倭", "神保舞琴", "臺本純華", "田上誠也", "竹内優", "田中友里恵", "冨永恵祐", "内藤麻優子", "中井厚博", "縄野佑匡", "西田優希", "野原春菜", "梅嘉麒", "原拓海", "橋本克樹", "東明日菜", "日置実里", "廣川由奈", "廣澤慈英", "福田沙良", "桝井正樹", "又吉見秋", "松本はるか", "村神千尋", "本村晴基"];
 
 function slideVisibleToggle(sWrap) {
     sWrap.forEach(function (slideItem) {
@@ -51,7 +60,7 @@ var swiper = new Swiper(".mySwiper", {
     /* ページネーション表示 */
     pagination: {
     el: ".swiper-pagination",
-    clickable: "true",
+    clickable: "false",
     renderBullet: function (index, className) {
         return '<div class="' + className + '">' + labels[index] + "</div>";
     },

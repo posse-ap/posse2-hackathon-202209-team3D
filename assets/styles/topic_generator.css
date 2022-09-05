@@ -3,17 +3,68 @@
   padding: 0;
 }
 
-main {
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
   width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: white;
+  text-align: center;
+  color: white;
+  display: flex;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+  width: 260px;
+}
+
+/* fadeUpをするアイコンの動き */
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  position: relative;
+  width: 100%;
+  width: 90vw;
+  width: 100vw;
   height: 90vh;
   padding-top: 10vh;
-  background-color: #F4C3C3;
+  background-color: #f4c3c3;
 }
 
 .title {
   padding-top: 8vh;
   font-size: 50px;
-  font-family: 'RocknRoll One', sans-serif;
+  font-family: "RocknRoll One", sans-serif;
   color: white;
   text-align: center;
   color: white;
@@ -32,7 +83,6 @@ main {
 }
 
 .topicBox {
-  position: relative;
   width: 700px;
   height: 150px;
   border-radius: 10px;
@@ -44,63 +94,70 @@ main {
   text-align: center;
   align-items: center;
   margin-bottom: 4vh;
-  box-shadow:  2px 2px 8px inset;
+  box-shadow: 2px 2px 8px inset;
 }
 
-.circle1{
+.circle1 {
   position: absolute;
   width: 300px;
   height: 300px;
-  border: 10px solid greenyellow;
-  border-radius: 30% 70% 32% 68% / 69% 21% 79% 31% ;
+  line-height: 300px;
+  border: 10px solid transparent;
+  border-radius: 30% 70% 32% 68% / 69% 21% 79% 31%;
+  background: transparent;
+  font-weight: bold;
+  font-size: 30px;
+  top: 54%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.circle2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 10px solid transparent;
+  border-radius: 82% 18% 25% 75% / 50% 50% 50% 50%;
   background: transparent;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.circle2{
+.circle3 {
   position: absolute;
   width: 300px;
   height: 300px;
-  border: 10px solid greenyellow;
-  border-radius: 82% 18% 25% 75% / 50% 50% 50% 50%   ;
+  border: 10px solid transparent;
+  border-radius: 17% 83% 84% 16% / 13% 52% 48% 87%;
   background: transparent;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.circle3{
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border: 10px solid greenyellow;
-  border-radius: 17% 83% 84% 16% / 13% 52% 48% 87%  ;
-  background: transparent;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} 
+.hidden {
+  display: none;
+}
 
 .q-collection {
   width: 600px;
   margin: 0 auto;
 }
 
-#questions>li {
+#questions > li {
   list-style: disc;
   text-align: center;
   font-weight: bold;
   font-size: 20px;
   margin-top: 20px;
   /* background-color: papayawhip; */
-
 }
 
 #btn {
   color: white;
-  background-color: #97C2DE;
+  background-color: #97c2de;
   padding: 8px;
   border-radius: 4px;
   cursor: pointer;
@@ -135,26 +192,30 @@ main {
   opacity: 0.6;
 }
 
-@media (max-width: 499px) {
-  main{
+@media (max-width: 375px) {
+  main {
     width: 100%;
   }
-  .title{
-    font-size: 35px;
-    padding-top: 60px;
+  .title {
+    font-size: 200%;
+    padding-top: 8vh;
   }
-  .txt_gene{
-    margin-top: 70px;
+  .txt_gene {
+    padding-top: 6vh;
   }
-  .topicBox{
-    width: 300px;
+  .topicBox {
+    width: 80vw;
+    font-size: 130%;
+    padding-bottom: 0.7vh;
   }
-  #btn{
-    width: 300px;
+  #btn {
+    width: 70vw;
   }
-  .q-collection{
+  .q-collection {
     width: 375px;
     text-align: center;
   }
-
+  #questions li {
+    font-size: 80%;
+  }
 }
