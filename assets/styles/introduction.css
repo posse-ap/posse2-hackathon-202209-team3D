@@ -6,7 +6,7 @@ body {
   font-size: 13px;
   line-height: 1.5;
 }
-]h1::before{
+h1::before{
 
 }
 
@@ -105,3 +105,22 @@ h1,h2{}
   opacity: 1;
   position: relative;
 }/*# sourceMappingURL=introduction.css.map */
+
+.name-list{
+  width: 1000px;
+  height: 300px;
+  margin-top: 50px;
+  margin: 50px auto;
+  background-color: pink;
+  /* font-size: 20px; */
+}
+
+.name-row{
+  display: flex;
+  width: 100%;
+}
+
+.name-tag{
+  width: 12.5%;
+  text-align: center;
+}

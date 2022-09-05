@@ -1,5 +1,5 @@
 function slideVisibleToggle(sWrap) {
-  sWrap.forEach(function(slideItem) {
+    sWrap.forEach(function(slideItem) {
       if ( slideItem.classList.contains('swiper-slide-visible') == true ){
           if ( slideItem.classList.contains('slide-invisible') == true ){
               slideItem.classList.remove('slide-invisible');
@@ -65,3 +65,5 @@ var swiper = new Swiper(".mySwiper", {
       },
   },
 });
+
+
