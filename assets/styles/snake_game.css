@@ -44,8 +44,8 @@ main {
 
 .start_menu_instruction {
   width: 100%;
-  margin-top: 30vh;
-  margin-bottom: 40px;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
 
   background-color: white;
   border-radius: 20px;
@@ -214,7 +214,7 @@ main {
 .arrows {
   width: 60px;
   height: 72px;
-  margin-top: 20vh;
+  margin-top: 10vh;
 
 }
 
@@ -244,20 +244,18 @@ main {
 
 .arrows path.a1 {
   animation-delay:-1s;
-  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  -webkit-animation-delay:-1s;
 }
 
 .arrows path.a2 {
   animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  -webkit-animation-delay:-0.5s;
 }
 
 .arrows path.a3 { 
   animation-delay:0s;
-  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  -webkit-animation-delay:0s;
 }
-
-
 
 .disabled {
   display: none;
