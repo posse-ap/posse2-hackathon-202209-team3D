@@ -89,9 +89,6 @@ header a {
     background-color: #ffe1ab;
     box-shadow: 4px 4px 6px #ffbf47;
   }
-  .pc_navigation a:nth-child(2) {
-    font-size: 65%;
-  }
   @media (max-width: 960px) {
     .bloom_logo_img {
       height: 40%
@@ -194,7 +191,9 @@ header a {
     .hamburger_button:hover {
       transform: translate(-2px, -2px);
     }
-    
+    .logos_set {
+      padding-left: 80%;
+    }
     .overlay_navigation {
       width: 100%;
       height: 90vh;
@@ -205,10 +204,11 @@ header a {
       pointer-events: none;
       transition: 0.5s;
     }
-    .overlay_navigation.show {
+    .show {
       opacity: 1;
       background-color: rgba(255, 255, 255, 0.807);
       pointer-events: auto;
+      z-index: 100;
     }
     .overlay_navigation ul {
       width: 100%;

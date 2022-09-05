@@ -1,4 +1,53 @@
 @charset "UTF-8";
+
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: white;
+  text-align:center;
+  color:white;
+  display: flex;
+  }
+  
+  /* Loading画像中央配置　*/
+  #splash_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Loading アイコンの大きさ設定　*/
+  #splash_logo img {
+    width: 260px;
+  }
+  
+  /* fadeUpをするアイコンの動き */
+  
+  .fadeUp{
+  animation-name: fadeUpAnime;
+  animation-duration:0.75s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 /* common */
 body {
   margin: 0;
@@ -14,8 +63,12 @@ main {
 main img {
   width: 100%;
   height: 100%;
-  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: -webkit-transform 1.9s ease;
+  transition: -webkit-transform 1.9s ease;
   transition: transform 1.9s ease;
+  transition: transform 1.9s ease, -webkit-transform 1.9s ease;
 }
 
 h1 {
@@ -23,6 +76,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-family: "Zen Antique", serif;
   margin: 5%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), to(#ffd6c2));
   background: linear-gradient(transparent 40%, #ffd6c2 100%);
 }
 
@@ -43,28 +97,40 @@ h2 {
   width: 100vw;
   height: 60vh;
   overflow: hidden;
-  outline: 2px solid red;
+  outline: 7px solid #f4c3c3;
   background-color: white;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
 }
+
 .swiper-slide .slide_img {
   width: 50%;
   position: relative;
+  opacity: 1;
 }
+
 .swiper-slide .slide_img ::before {
-  content: ""; /* 疑似要素に必須 */
-  height: 100%; /* 高さいっぱい */
+  content: "";
+  /* 疑似要素に必須 */
+  height: 100%;
+  /* 高さいっぱい */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(80%, white));
   background: linear-gradient(transparent 0, white 80%);
-  position: absolute; /*  */
+  position: absolute;
+  /*  */
   top: 0;
   left: 0;
 }
+
 .swiper-slide .slide_text {
   width: 50%;
   text-align: center;
   padding: 5%;
 }
+
 .swiper-slide img {
   width: 100%;
   height: 100%;
@@ -75,6 +141,7 @@ h2 {
   border-top-right-radius: 40%;
   z-index: 0;
 }
+
 .swiper-slide ::after {
   content: "";
   width: 100%;
@@ -83,16 +150,34 @@ h2 {
 }
 
 .swiper-slide-active img {
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
   opacity: 1;
   position: relative;
 }
 
 /* name_list */
 .swiper-pagination-bullet {
-  background-color: transparent;
-  height: 30px;
-  width: 35px;
+  height: 10%;
+  width: 7%;
+  background-color: #4894ff;
+  color: white;
+  font-size: 120%;
+  font-weight: 600;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px #2e64af;
+          box-shadow: 2px 2px #2e64af;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet:hover {
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: lightgrey;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -121,12 +206,13 @@ h2 {
     height: 600px;
   }
 }
+
 @media (max-width: 499px) {
   .swiper-slide {
     width: 100%;
     height: auto;
     overflow: hidden;
-    outline: 2px solid red;
+    outline: 7px solid #f4c3c3;
     display: block;
   }
   .swiper-slide .slide_img {
@@ -156,8 +242,10 @@ h2 {
     background-color: rgba(0, 61, 125, 0.1);
   }
   .swiper-slide-active img {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
     opacity: 1;
     position: relative;
   }
-}/*# sourceMappingURL=introduction.css.map */
+}
+/*# sourceMappingURL=introduction.css.map */
