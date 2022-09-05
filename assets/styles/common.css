@@ -89,9 +89,6 @@ header a {
     background-color: #ffe1ab;
     box-shadow: 4px 4px 6px #ffbf47;
   }
-  .pc_navigation a:nth-child(2) {
-    font-size: 65%;
-  }
   @media (max-width: 960px) {
     .bloom_logo_img {
       height: 40%

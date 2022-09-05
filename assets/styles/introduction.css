@@ -1,4 +1,18 @@
 @charset "UTF-8";
+
+/* START ADDITIONAL HEADER  */
+header {
+  font-family: none;
+}
+.logo_area {
+  width: 0;
+  margin-left: 8%;
+}
+.pc_navigation ul a {
+  font-size: 87%;
+}
+/* END ADDITIONAL HEADER  */
+
 /* common */
 body {
   margin: 0;
